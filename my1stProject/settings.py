@@ -25,9 +25,11 @@ SECRET_KEY = "django-insecure-5t0m0fed_n&)8m=l5p+5i%g!+&vwk@9-$sr@q4flr!$4r*pj-t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.pythonanywhere.com",
+    "https://*.lhr.life",
+]
 # Application definition
 
 INSTALLED_APPS = [
